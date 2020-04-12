@@ -44,7 +44,15 @@ export function main(event, context, callback) {
             callback(null, response);
             return;
         }
-    }
+
+        // Return status code 200 and the newly created item
+        const response = {
+            statusCode: 200,
+            headers: headers,
+            body: JSON.stringify(params.Item)
+        };
+        callback(null, response);
+    });
     
 }
 
