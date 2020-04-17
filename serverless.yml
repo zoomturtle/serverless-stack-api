@@ -45,7 +45,7 @@ functions:
   create:
     handler: create.main
     events:
-      -http:
+      - http:
         path: notes
         method: post
         cors: true
