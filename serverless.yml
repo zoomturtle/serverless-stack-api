@@ -47,10 +47,10 @@ functions:
     handler: create.main
     events:
       - http:
-        path: notes
-        method: post
-        cors: true
-        authorizer: aws_iam
+          path: notes
+          method: post
+          cors: true
+          authorizer: aws_iam
         
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
@@ -111,8 +111,9 @@ functions:
           method: post
           cors: true
           authorizer: aws_iam
-    
+
 # Create our resources with separate CloudFormation templates
-  resources:
-    # API Gateway Errors
-    - ${file(resources/api-gateway-errors.yml)}
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+    
