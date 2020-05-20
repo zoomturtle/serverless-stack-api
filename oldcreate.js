@@ -53,4 +53,8 @@ export function main(event, context, callback) {
         };
         callback(null, response);
     });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 231523d94e3a13da3c48bf5b0646c444ef7dfa2f
